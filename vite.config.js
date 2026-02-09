@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     allowedHosts: "https://url-shortening-web-app-two.vercel.app",
+    cors: "https://url-shortening-web-app-two.vercel.app",
     proxy: {
       '/api': {
         target: 'https://cleanuri.com/api',
